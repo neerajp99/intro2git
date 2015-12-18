@@ -1,2 +1,13 @@
-# intro2git
-Simple website to learn the version control system - git
+## GCI 15 Task | Fossasia
+
+### Simple website about Git
+
+- git branch 
+- git checkout
+- git status
+- git log 
+- git push
+- git commit
+- git rebase
+- git stash
+- git reset 

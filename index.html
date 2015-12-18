@@ -1,0 +1,228 @@
+<!Doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>How git works?</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="icon" href="logo.png" type="image/icon">
+</head>
+
+<body>
+    <section id="landing" class="main">
+        <div class="container">
+            <div class="box">
+                <h1 class="page-header text-center">A beginners' intro to git</h1>
+                <p class="text-center">
+                    Simple guide to learn git in less than 30 minutes
+                </p>
+                <img src="logo.png" class="text-center"></img>
+                <ul class="list-inline ">
+                    <li>
+                        <a href="#"> <i class="fa fa-facebook fa-3x"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-twitter fa-3x"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-linkedin fa-3x"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-github fa-3x"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-google-plus fa-3x"> </i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-envelope fa-3x"> </i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page1">
+            <h1 class="text-center">setting a repository</h1>
+            <p>creates a new Git repository
+                <br>
+                <code>git init</code>
+                <br> executing git init creates a .git subdirectory in the project root
+            </p>
+        </div>
+        <div class="page2">
+            <h1 class="text-center"> check the status</h1>
+            <p>checks the current state of repository
+                <br>
+                <code> git status </code>
+                <br> output
+                <br>
+                <code>
+                    $ git status
+                    <br>
+                    # On branch master
+                    <br>
+                    nothing to commit (working directory clean)
+                </code>
+            </p>
+        </div>
+        <div class="page3">
+            <h1 class="text-center">checkout a repository</h1>
+            <p>create a working copy of a local repository by running the command</p>
+            <p>
+                <code> git clone /path/to/repository </code>
+                <br>
+                <br> when using a remote server, your command will be
+                <br>
+                <br>
+                <code>git clone username@host:/path/to/repository</code>
+            </p>
+        </div>
+        <div class="page4">
+            <h1 class="text-center">git branch</h1>
+            <p>
+                list all of the branches in your repository
+                <br>
+                <br>
+                <code>git branch<br><br></code> create a new branch list all of the branches in your repository
+                <br>
+                <code> git branch &lt;branch&gt; <br><br> </code> delete the specified branch
+                <br>
+                <code> git branch -d &lt;branch&gt; <br><br> </code> rename the current branch to &lt;branch&gt;
+                <br>
+                <code> git branch -m &lt;branch&gt; </code>
+        </div>
+        <div class="page5">
+            <h1 class="text-center"> git checkout </h1>
+            <p>
+                checking out files, checking out commits, and checking out branches
+                <br>
+                <br> return to the master branch
+                <br>
+                <code> git checkout master <br><br> </code> to check the previous version
+                <br>
+                <code> git checkout &lt;commit &gt; &lt;file&gt; <br><br></code> update all files in the working directory to match the specified commit
+                <br>
+                <code> git checkout &lt;commit&gt; </code>
+        </div>
+        <div class="page6">
+            <h1 class="text-center"> to show commit logs </h1>
+            <p>
+                display the entire commit history
+                <br>
+                <code> git log </code>
+                <br>
+                <br> limit the number of lines by &lt;limit&gt;
+                <br>
+                <code> git log -n &lt;limit&gt; </code>
+                <br>
+                <br> condense each commit to a single line
+                <br>
+                <code> git log --oneline </code>
+                <br>
+                <br> show only commits that occur between &lt;since&gt; and &lt;until&gt;
+                <br>
+                <code> git log --stat </code>
+                <br>
+                <br> only display commits that include the specified file
+                <br>
+                <code> git log &lt;file&gt; </code>
+                <br>
+                <br> graph flag draw a text based graph of the commits on the left hand side of the commit messages
+                <br>
+                <code> git log --graph  </code>
+                <br>
+                <br>
+        </div>
+        <div class="page7">
+            <h1 class="text-center"> updating remote refs </h1>
+            <p>
+                <strong>
+            The <code>git remote</code> command lets you create, view, and delete connections to other repositories.</strong></p>
+            <p>
+                <br> list the remote connections you have to other repositories
+                <br>
+                <code> git remote </code>
+                <br>
+                <br> to create a new connection to a remote repository
+                <br>
+                <code> git remote -v </code>
+                <br>
+                <br> to remove the connection to the remote repository called &lt;name&gt;
+                <br>
+                <code> git remote rm &lt;name&gt; </code>
+                <br>
+                <br> rename a remote connection from &lt;old-name&gt; to &lt;new-name&gt;
+                <br>
+                <code> git remote rename &lt;old-name&gt; &lt;new-name&gt; </code>
+        </div>
+        <div class="page8">
+            <h1 class="text-center"> update remote refs </h1>
+            <p>
+                <br> push the specified branch to &lt;remote&gt;
+                <br>
+                <code> git push &lt;remote&gt; &lt;branch&gt; </code>
+                <br>
+                <br> push the specified branch to &lt;remote&gt; but force the push even if it results in a non-fast-forward merge
+                <br>
+                <code> git push <remote> --force </code>
+                <br>
+                <br> Push all of your local branches to the specified remote
+                <br>
+                <code> git push <remote> --all </code>
+        </div>
+        <div class="page9">
+            <h1 class="text-center"> forward-port local commits </h1>
+            <p>
+                <code>rebasing</code> really is just moving a branch from one commit to another
+                <br>
+                <br> Rebase the current branch onto &lt;base&gt;
+                <br>
+                <code> git rebase &lt;base&gt; </code>
+        </div>
+        <div class="page10">
+            <h1 class="text-center"> stashing </h1>
+            <p>
+                to record the current state of the working directory
+                <br>
+                <code> git stash </code>
+                <br>
+                <br> the modification stashed away by <code>git stash</code>can be listed
+                <br>
+                <code> git stash list </code>
+            </p>
+        </div>
+        <div class="page11">
+            <h1 class="text-center"> reset current HEAD to the specified state </h1>
+            <p>
+                remove the specified file from the staging area, but leave the working directory unchanged
+                <br>
+                <code> git reset &lt;file&gt; </code>
+                <br>
+                <br> reset the staging area to match the most recent commit
+                <br>
+                <code> git reset </code>
+                <br>
+                <br> reset the staging area and the working directory
+                <br>
+                <code> git reset --hard </code>
+                <br>
+                <br> Move the current branch tip backward to &lt;commit&gt;
+                <br>
+                <code> git reset &lt;commit&gt; </code>
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
