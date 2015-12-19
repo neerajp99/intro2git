@@ -336,3 +336,8 @@ code {
     text-align: left;
     margin: 0 auto;
     font-size: 25px;
+}
+
+.box > p > code > a{
+    color: #F05033;
+}
