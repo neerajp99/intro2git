@@ -1,4 +1,4 @@
-html {
+    html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -83,12 +83,18 @@ i:hover {
 .page1 h1 {
     color: #333;
     padding-top: 90px;
+    color: #DEE9F3;
 }
 
 .page1 > p {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: #DEE9F3;
+}
+
+p span {
+    display: block;
 }
 
 code {
@@ -108,12 +114,14 @@ code {
 .page2 > h1 {
     padding-top: 0px;
     margin-top: 0px;
+    color: #FCF8E3;
 }
 
 .page2 > p {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: #FCF8E3;
 }
 
 .page2 > code {
@@ -163,7 +171,7 @@ code {
 }
 
 .page5 {
-    background-color: #95a5a6;
+    background-color: #bdc3c7;
     width: 100%;
     height: 95%;
     padding-top: 70px;
@@ -173,12 +181,14 @@ code {
 .page5 > h1 {
     padding-top: 0px;
     margin-top: 0px;
+    color: #864E4B;
 }
 
 .page5 > p {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: #4C0D09;
 }
 
 .page6 {
@@ -200,6 +210,10 @@ code {
     padding-top: 30px;
 }
 
+.st {
+    font-family: 'Architects Daughter';
+}
+
 .page7 {
     background-color: #e67e22;
     width: 100%;
@@ -218,11 +232,11 @@ code {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
-    color: #4c0d09;
+    color: #6B241F;
 }
 
 .page8 {
-    background-color: #e74c3c;
+    background-color: #ffc19f;
     width: 100%;
     height: 100%;
     padding-top: 70px;
@@ -232,12 +246,14 @@ code {
 .page8 > h1 {
     padding-top: 0px;
     margin-top: 0px;
+    color: #cc4037;
 }
 
 .page8 > p {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: #000;
 }
 
 .page9 {
@@ -304,3 +320,17 @@ code {
     padding-top: 30px;
     color: #fff;
 }
+
+.xyz {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    height: 127px;
+    width: 673px;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 25px;
